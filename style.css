@@ -1,0 +1,134 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    color: white;
+  }
+  
+  .timer-container {
+    background: #333;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 40px 50px;
+    text-align: center;
+    width: 350px;
+    max-width: 90%;
+  }
+  
+  .timer {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .time {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .progress-bar-background {
+    position: relative;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  .progress-bar {
+    height: 12px;
+    background: #00ff5e;
+    border-radius: 6px;
+    width: 0%;
+    transition: width 1s linear;
+  }
+  
+  .inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .inputs input {
+    width: 50px;
+    padding: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    outline: none;
+  }
+  
+  .controls button {
+    width: 100px;
+    padding: 15px;
+    font-size: 1.1rem;
+    background: #00ff5e;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .controls button:disabled {
+    background: #777;
+    cursor: not-allowed;
+  }
+  
+  .controls button:hover:not(:disabled) {
+    background: #00ff5e;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #00ff5e;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 600px) {
+    .time {
+      font-size: 2.5rem;
+    }
+  
+    .inputs input {
+      width: 45px;
+      font-size: 1.2rem;
+    }
+  
+    .controls button {
+      font-size: 1rem;
+      padding: 12px 20px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .timer-container {
+      width: 90%;
+    }
+  
+    .time {
+      font-size: 2rem;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  

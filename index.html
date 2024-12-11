@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Timer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="timer-container">
+    <div class="timer">
+      <div class="time" id="timerDisplay">00:00</div>
+      <div class="progress-bar-background">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+    
+    <div class="inputs">
+      <input class="time-input" type="number" id="hours" placeholder="00" min="0" max="99">
+      <span>:</span>
+      <input class="time-input" type="number" id="minutes" placeholder="00" min="0" max="59">
+      <span>:</span>
+      <input class="time-input" type="number" id="seconds" placeholder="00" min="0" max="59">
+    </div>
+
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" disabled>Stop</button>
+      <button id="resetBtn" disabled>Reset</button>
+    </div>
+
+    <div class="message" id="message"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
